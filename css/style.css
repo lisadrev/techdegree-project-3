@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -14,6 +14,10 @@ body{
   margin: 0 auto;
   color: #9A9A9C;
   line-height: 1.25;
+}
+
+fieldset {
+  border: none;
 }
 
 header{
@@ -36,31 +40,76 @@ header p {
   margin-bottom: 35px;
 }
 
-h2 {
+h2,
+legend {
   font-size: 20px;
   color: black;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
+hr {
+  height: 1px;
+  color: black;
+  background-color: black;
+  margin: 3px;
+}
 
+.bold {
+  height: 3px;
+}
 
-input,
-select {
+.box-wide {
   padding: 20px 24px;
   background-color: #f2f2f2;
   margin-top: 7px;
   margin-bottom: 15px;
+  width: 100%;
   border-radius: .5em;
   border: none;
+  display: block;
 }
+
+
+
+input[id="zip"] {
+  width: 50%;
+}
+
+::placeholder {
+  text-align: right;
+  font-size: 14px;
+  font-style: italic;
+  color: lightgrey;
+}
+
+select:required:invalid {
+  color: lightgrey;
+}
+
+option[value=""] [disabled] {
+  display: none;
+}
+
+option {
+  color: black;
+}
+
+/* option:first-child {
+  color: grey; */
+
+}
+
+
+
 
 /*----------------------Flex-------------------------  */
 
-.contact,
-.newsletter {
+.fieldset {
   display: flex;
   flex-direction: column;
+
 }
 
 
