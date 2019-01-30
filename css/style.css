@@ -13,11 +13,12 @@ body{
   font-family: 'PT Serif', serif;
   margin: 0 auto;
   color: #9A9A9C;
-  line-height: 1.25;
+  line-height: 1.5;
 }
 
 fieldset {
   border: none;
+  margin-top: 30px;
 }
 
 header{
@@ -44,7 +45,6 @@ h2,
 legend {
   font-size: 20px;
   color: black;
-  margin-top: 20px;
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -72,7 +72,6 @@ hr {
 }
 
 
-
 input[id="zip"] {
   width: 50%;
 }
@@ -96,10 +95,50 @@ option {
   color: black;
 }
 
-/* option:first-child {
-  color: grey; */
+/*----------------------Newsletter CSS-------------------------  */
+input[name="user_newsletter"],
+input[name="newsletter_format"] {
+  margin: 10px;
+}
+
+.subheading{
+  padding: 15px 0;
+  display: block;
+}
+
+textarea {
+  padding: 50px 24px;
+  background-color: #f2f2f2;
+  margin-top: 7px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: .5em;
+  border: none;
+  display: block;
+}
+
+button[type="submit"]{
+  padding: 25px 24px;
+  background-color: #4EBBB5;
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: .5em;
+  border: none;
+  display: block;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
 
 }
+
+footer {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 200px;
+  font-style: italic;
+
+}
+
 
 
 
