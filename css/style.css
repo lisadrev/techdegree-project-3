@@ -10,7 +10,7 @@
 }
 
 body{
-  font-family: 'PT Serif', serif;
+  font-family: 'Merriweather', serif;
   margin: 0 auto;
   color: #9A9A9C;
   line-height: 1.5;
@@ -33,7 +33,7 @@ h1 {
   font-size: 20px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 header p {
@@ -43,15 +43,15 @@ header p {
 
 h2,
 legend {
-  font-size: 20px;
-  color: black;
+  font-size: 18px;
+  color: #293945;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 hr {
   height: 1px;
-  color: black;
+  color: #293945;
   background-color: black;
   margin: 3px;
 }
@@ -66,15 +66,21 @@ hr {
   margin-top: 7px;
   margin-bottom: 15px;
   width: 100%;
-  border-radius: .5em;
+  border-radius: .25em;
   border: none;
   display: block;
+}
+
+.box-wide:focus{
+  border: 3px solid #004080;
+
 }
 
 
 input[id="zip"] {
   width: 50%;
 }
+
 
 ::placeholder {
   text-align: right;
@@ -96,15 +102,29 @@ option {
 }
 
 /*----------------------Newsletter CSS-------------------------  */
-input[name="user_newsletter"],
+/* input[name="user_newsletter"],
 input[name="newsletter_format"] {
   margin: 10px;
+} */
+
+input[type="checkbox"],
+input[type="radio"]{
+    margin: 10px;;
 }
 
-.subheading{
+input[type="checkbox"]:checked::after,
+input[type="radio"]:checked ::after{
+    color: white;
+    background-color: blue;
+}
+
+.subheading,
+label[for="other-topics"] {
   padding: 15px 0;
   display: block;
 }
+
+
 
 textarea {
   padding: 50px 24px;
@@ -133,9 +153,10 @@ button[type="submit"]{
 
 footer {
   text-align: center;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 200px;
   font-style: italic;
+  font-size: 14px;
 
 }
 
@@ -156,8 +177,17 @@ footer {
 
 @media (min-width: 768px) {
   .wrapper {
-    width: 90%;
+    width: 70%;
     max-width: 1000px;
+  }
+
+  input[id="zip"] {
+    width: 30%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
   }
 
 }

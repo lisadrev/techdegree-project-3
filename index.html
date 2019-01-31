@@ -5,7 +5,7 @@
     <meta charset="utf-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -63,13 +63,16 @@
             <label for="javascript-news">Javascript News</label>
 
             <label class="subheading">Newsletter Format</label>
+
             <input type="radio" id="html-format" value="html-format" name="newsletter_format">
             <label for="html-format">HTML</label><br>
 
             <input type="radio" id="plain-format" value="plain-format" name="newsletter_format">
-            <label for="plain-format">Plain Text</label>
-            <p> Other topics you'd like to hear about</p>
-            <textarea></textarea><br>
+            <label for="plain-format">Plain Text</label><br>
+
+            <label for="other-topics">Other topics you'd like to hear about</label>
+            <textarea id="other-topics" name="user_topics"></textarea><br>
+
             <button type="submit">Sign Up</button>
         </fieldset>
       </form>
