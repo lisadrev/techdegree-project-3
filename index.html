@@ -22,28 +22,28 @@
           <legend>Contact Information</legend>
               <div class="flex">
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name" placeholder="Required" class="box-wide">
+                <input required type="text" id="name" name="user_name" placeholder="Required" class="box-wide">
               </div>
               <div class="flex">
                 <label for="email">Email Address</label>
-                <input type="email" id="mail" name="user_email" placeholder="Required" class="box-wide">
+                <input required type="email" id="email" name="user_email" placeholder="Required" class="box-wide">
               </div>
               <div class="flex">
                 <label for="phone">Phone Number</label>
-                <input type="telephone" id="phone" name="user_phone" class="box-wide">
+                <input required type="tel" id="phone" name="user_phone" class="box-wide">
               </div>
               <div class="flex">
                 <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address" class="box-wide">
+                <input required type="text" id="address" name="user_address" class="box-wide">
               </div>
               <div class="flex">
                 <label for="city">City</label>
-                <input type="text" id="city" name="user_city" class="box-wide">
+                <input required type="text" id="city" name="user_city" class="box-wide">
               </div>
               <div class="flex">
                 <label for="state">State</label>
                 <select required id="state" name="user_state" class="box-wide">
-                  <option value=""disabled selected>Choose State</option>
+                  <option value="" disabled selected>Choose State</option>
                   <option value="alabama">Alabama</option>
                   <option value="alaska">Alaska</option>
                   <option value="arizona">Arizona</option>
@@ -54,7 +54,7 @@
             </div>
             <div class="flex">
               <label for="zip">Zip Code</label>
-              <input type="text" id="zip" name="user_zip" class="box-wide">
+              <input required type="text" id="zip" name="user_zip" class="box-wide">
             </div>
         </fieldset>
         <hr>
@@ -67,7 +67,7 @@
             <input type="checkbox" id="css-news" value="css-news" name="user_newsletter">
             <label for="css-news">CSS News</label><br>
 
-            <input type="checkbox" id="javasrcript-news" value="javasrcript-news" name="user_newsletter">
+            <input type="checkbox" id="javascript-news" value="javasrcript-news" name="user_newsletter">
             <label for="javascript-news">Javascript News</label>
 
             <label class="subheading">Newsletter Format</label>
@@ -79,7 +79,7 @@
             <label for="plain-format">Plain Text</label><br>
 
             <label for="other-topics">Other topics you'd like to hear about</label>
-            <textarea id="other-topics" name="user_topics"></textarea><br>
+            <textarea id="other-topics" name="user_topics" placeholder="Please provide comments"></textarea><br>
 
             <button type="submit">Sign Up</button>
         </fieldset>

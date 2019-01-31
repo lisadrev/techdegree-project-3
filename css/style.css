@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+form {
+  background-color: #ffffe6;
+}
+
 .wrapper {
   width: 95%;
   margin: 0 auto;
@@ -20,6 +24,7 @@ fieldset {
   border: none;
   margin-top: 30px;
 }
+
 
 header{
   text-align: center;
@@ -69,11 +74,13 @@ hr {
   border-radius: .25em;
   border: none;
   display: block;
+  -webkit-transition: all 500ms ease-in-out;
 }
 
 .box-wide:focus,
 textarea:focus {
-  border: 1px solid #004080;
+  background-color: white;
+  outline: 0px;
 }
 
 input[id="zip"] {
@@ -86,6 +93,10 @@ input[id="zip"] {
   font-style: italic;
   color: lightgrey;
   padding: 2px;
+}
+
+textarea::placeholder{
+  text-align: center;
 }
 
 select {
